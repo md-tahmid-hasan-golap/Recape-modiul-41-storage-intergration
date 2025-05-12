@@ -6,7 +6,13 @@ const bottlesPromised = fetch("./boottles.json").then((res) => res.json());
 function App() {
   return (
     <>
-      <h1>Bye Awesome Water Bottls</h1>
+      <h2
+        style={{
+          textAlign: "center",
+        }}
+      >
+        Bye Awesome Water Bottls
+      </h2>
       <Suspense fallback={<h2>Bottles Are Loading ...</h2>}>
         <Bottles bottlesPromised={bottlesPromised}></Bottles>
       </Suspense>
