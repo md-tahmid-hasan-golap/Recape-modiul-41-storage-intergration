@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "AquaPure",
+    "capacity": 1.0,
+    "material": "Plastic",
+    "color": "Blue",
+    "price": 5.99,
+    "weight": 120,
+    "usableYears": 1,
+    "canHoldHotOrCold": false,
+    "image": "https://example.com/images/aquapure.jpg"
+  },
+  {
+    "id": 2,
+    "name": "HydroSteel",
+    "capacity": 0.75,
+    "material": "Stainless Steel",
+    "color": "Silver",
+    "price": 12.49,
+    "weight": 350,
+    "usableYears": 5,
+    "canHoldHotOrCold": true,
+    "image": "https://example.com/images/hydrosteel.jpg"
+  },
+  {
+    "id": 3,
+    "name": "EcoGlass",
+    "capacity": 1.2,
+    "material": "Glass",
+    "color": "Transparent",
+    "price": 9.99,
+    "weight": 500,
+    "usableYears": 3,
+    "canHoldHotOrCold": true,
+    "image": "https://example.com/images/ecoglass.jpg"
+  },
+  {
+    "id": 4,
+    "name": "SportySip",
+    "capacity": 0.5,
+    "material": "Plastic",
+    "color": "Red",
+    "price": 4.50,
+    "weight": 100,
+    "usableYears": 1,
+    "canHoldHotOrCold": false,
+    "image": "https://example.com/images/sportysip.jpg"
+  },
+  {
+    "id": 5,
+    "name": "ThermoGuard",
+    "capacity": 1.5,
+    "material": "Insulated Stainless Steel",
+    "color": "Black",
+    "price": 19.99,
+    "weight": 600,
+    "usableYears": 7,
+    "canHoldHotOrCold": true,
+    "image": "https://example.com/images/thermoguard.jpg"
+  }
+]
