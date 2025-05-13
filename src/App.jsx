@@ -13,7 +13,17 @@ function App() {
       >
         Bye Awesome Water Bottls
       </h2>
-      <Suspense fallback={<h2>Bottles Are Loading ...</h2>}>
+      <Suspense
+        fallback={
+          <h2
+            style={{
+              textAlign: "center",
+            }}
+          >
+            Bottles Are Loading ...
+          </h2>
+        }
+      >
         <Bottles bottlesPromised={bottlesPromised}></Bottles>
       </Suspense>
     </>

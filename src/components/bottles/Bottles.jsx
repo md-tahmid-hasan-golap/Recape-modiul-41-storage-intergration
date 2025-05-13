@@ -1,17 +1,27 @@
-import React, { use } from "react";
-
+import React, { use, useState } from "react";
+import Bottle from "../bottle/Bottle";
+import "./bottles.css";
 const Bottles = ({ bottlesPromised }) => {
+  const [cart, setCart] = useState([]);
   const useBottlesPromised = use(bottlesPromised);
-  console.log(useBottlesPromised);
+  const handleAddToCart = (bottle) => {
+    const newCart = [...cart, bottle];
+    setCart(newCart);
+  };
+  //   console.log(useBottlesPromised);
   return (
     <div>
-      <h3
-        style={{
-          textAlign: "center",
-        }}
-      >
-        Bottle Count : {useBottlesPromised.length}
-      </h3>
+      <h3>Bottles Count : {useBottlesPromised.length}</h3>
+      <p>Added to cart : {cart.length}</p>
+      <div className="bottles-containar">
+        {useBottlesPromised.map((bottle) => (
+          <Bottle
+            key={bottle.id}
+            handleAddToCart={handleAddToCart}
+            bottle={bottle}
+          ></Bottle>
+        ))}
+      </div>
     </div>
   );
 };
